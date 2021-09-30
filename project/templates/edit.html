@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>
+Crud
+</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<br><br>
+<center>
+<h1>CRUD</h1>
+<h2>Performing Student Updatel</h2>
+<h3>Updating Details</h3>
+<!--starting form for registering-->
+
+<table>
+<th>
+<tr>
+<td>First Name</td>
+<td>Last Name</td>
+<td>Email</td>
+<td>Username</td>
+</tr>
+</th>
+<tr>
+<form method="POST" action="{% url 'crud_application:updatestudent' %}">
+{% csrf_token %}
+
+<td><input type="text" name="fname" value="{{user.first_name}}"></td>
+<td><input type="text" name="lname" value=" {{user.last_name}}"></td>
+<td><input type="text" name="email" value=" {{user.email}}"></td>
+<td><input type="text" name="username" value="{{user.username}}"></td>
+<td><input type="hidden" name="id" value="{{user.id}}"></td>
+<td><input type="submit" value="Update"></td>
+</form>
+
+<tr>
+</table>
+
+</center>
+</body>
+</html>
