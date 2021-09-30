@@ -1,0 +1,229 @@
+ul{
+    padding:0;
+    margin:0;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration:none;
+    color:black;
+}
+ul li a:hover{
+    color:black;
+}
+.top-header{
+    padding-top:20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.main-section{
+        background-color: #f6f6f6;
+    
+}
+    
+
+.bg{
+    border:2px solid #1c71b7;
+}
+.photo{
+    background-image: url("images/post-bnr.jpg");
+    height:200px;
+}
+.box-color{
+        color: #fff;
+        background-color: #1c71b7;
+        padding: 8px 25px;
+        font-weight: 700;
+        border-radius: 4px;
+    }
+    .colo{
+            color: #fff;
+            background-color: #1c71b7;
+            padding: 8px 25px;
+            font-weight: 700;
+            border-radius: 4px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .user-title a{
+            text-decoration:none;
+
+            }
+            .user-title a {
+                color: #111111;
+                font-weight: 700;
+            }
+        .block-box {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #e8e8e8;
+        }
+        .header-blog{
+            background-image:url(images/post-bnr.jpg);
+            height:200px;
+        }
+    
+
+.logo-in-header img{
+width:120px;
+}
+
+.list{
+
+display:inline-block;
+padding:0;
+margin:0;
+
+
+}
+.list {
+list-style-type: none;
+display:inline-block;
+
+}
+.list a{
+text-decoration:none;
+
+
+}
+.list a {
+color: #fff;
+background-color: #1c71b7;
+padding: 8px 25px;
+font-weight: 700;
+border-radius: 4px;
+}
+.list ul li a:hover{
+background-color:rgb(75, 75, 126);
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:20px;
+    margin-top:20px;
+}
+.box-1{
+    background-color:#fff;
+    border-radius:50px;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.button a:hover{
+    background-color:#1c71b7;
+}
+footer{
+    background-color: black;
+    padding:20px 20px;
+    color:white;
+}
+.section-form{
+    background-color: #f0f4f6;
+}
+.packages {
+    margin: 20px;
+    height: 100%;
+    max-width: 100%;
+    font-weight: 600;
+    padding: 1.5em;
+    background-color: #ffffff;
+    border: 1px solid #1c71b7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 19px 38px rgb(255 255 255), 0 15px 12px rgb(146 146 146 / 20%);
+    box-shadow: 0 19px 38px rgb(255 255 255), 0 15px 12px rgb(146 146 146 / 20%);
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: #080808;
+    border-top: 5px solid #1c71b7;
+    margin-bottom: 0px;
+}
+.search-box{
+    position:relative;
+    
+}
+    .icon {
+        position: absolute;
+        left: 7px;
+        bottom: 7px;
+    }
+}
+.down{
+    padding-top:70px;
+}
+.btn-post{
+    margin-top:40px;
+    margin-bottom: 20px;
+}
+.banner-sec{
+    background-image: url(images/post-bnr.jpg);
+    height:200px;
+}
+.banner-title{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment{
+    border-top:1px solid black;
+}
+.inner-class{
+    overflow:hidden;
+
+}
+.inner-class img{
+    transition:all 2s ease;
+}
+.inner-class:hover img{
+    transform:scale(1.5);
+}
+/*guides*/
+.styling-read{
+    padding:0;
+    margin:0;
+}
+    .styling-read li{
+        list-style-type: none;
+    }
+    .styling-read li a{
+        text-decoration: underline;
+        color:  #1c71b7;      
+        font-weight:400;
+        font-size:20px
+    }
+    .styling-read li a:hover{
+        color:black;
+        text-decoration: underline;
+    }
+
+
+    .banner-sec-feed{
+        position: relative;
+        background-image: url("images/post-bnr.jpg");
+        height:200px;
+    }
+    .banner-title-ab{
+        position:absolute;
+        top:50%;
+    
+  transform: translateY(-50%);
+    }
+    
+
+
+
+

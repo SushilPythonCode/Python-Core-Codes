@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Language" content="en">
+
+    
+    
+
+    <title>
+        different-size-photo-slider.slider - Jssor Slider
+    </title>
+    <!-- #region Google Ad Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- #endregion -->
+    
+    <style type="text/css">
+        .elfinder-tree .elfinder-navbar-root .elfinder-navbar-icon {
+            background-position: 0 -16px !important;
+        }
+    </style>
+
+    <!-- Google Counter Begin -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45690170-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-45690170-1');
+    </script>
+    <!-- Google Counter End -->
+
+
+    <link href="/style/site/css/site-style-2.7.0.min.css" rel="stylesheet" />
+</head>
+<body style="font-family: Arial, sans-serif;">
+    <form method="post" action="./different-size-photo-slider.slider" id="form1" class="mainform">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ScjUBPvubLyPhLnqtnLAdgEa/IYRtKRg7SNOhPu3IDO48SsYhEDlQ6BPSY060WWT+5T1ynZX4V1LP1HHep1ZdmjRTaeEHrdD5H2AOlb2+GNj+t4RhYh7l6/y42p4W1E3f9pjWoCzQB69C4tEGnn+ItqfwqWEKpsT6gHjG+47qFjiEwecdRIYquFoHVJz64n8fV6wX4f0K+rMARr44O2BzqI8IybgFuWl+EjTTlx1DUg=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B6CBD475" />
+</div>
+
+        <!--#region header-->
+        <div class="header public clearfix">
+            <a class="logo" href="/">Jssor</a>
+            
+            <div class="nav">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" class="toggle" onclick>
+                    <span class="icon-bar" style="top: 7px;"></span>
+                    <span class="icon-bar" style="top: 14px;"></span>
+                    <span class="icon-bar" style="top: 21px;"></span>
+                </label>
+                
+                <div data-u="navi-sign" data-interaction="user-commands" class="nav-sign">
+                    
+                    <!--#region for user to sign in -->
+                    <a class="nav-btn nav-signup" href="/action/sign_up.aspx">Sign up</a>
+                    <a data-command="jssor-login" class="nav-btn nav-signin" href="/action/login.aspx">Log in</a>
+                    <!--#endregion-->
+                    
+                </div>
+                
+        <!-- for public access -->
+        <div class="menu">
+
+            <a href="/">Home</a>
+            <a class="current" href="/demos/">Demos</a>
+            <!--<a href="/slideshow/">Slideshow</a>-->
+            <!--<a href="/skins/">Skins</a>-->
+
+            <a href="/tutorial/">Tutorial</a>
+            <a href="/help/">Help</a>
+
+            <a href="/development/">Development</a>
+            
+            <!--<a href="/download.html">Download</a>-->
+            <a href="/pricing.html">Pricing</a>
+            <a href="/support.html">Support</a>
+        </div>
+
+            </div>
+        </div>
+        <!--#endregion-->
+
+        <!--#region content-->
+        
+
+        
+        <!-- #region Jssor Slider Begin -->
+        <!-- Generator: Jssor Slider Composer -->
+        <!-- Source: https://www.jssor.com/demos/different-size-photo-slider.slider/=edit -->
+        <script src="//jssors8.azureedge.net/script/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.jssor_1_slider_init = function() {
+
+                var jssor_1_SlideshowTransitions = [
+                  {$Duration:800,x:0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InCubic},$Opacity:2,$ZIndex:-10,$Brother:{$Duration:800,x:-0.25,$Zoom:1.5,$Easing:{$Left:$Jease$.$InWave,$Zoom:$Jease$.$InCubic},$Opacity:2,$ZIndex:-10}},
+                  {$Duration:1200,x:0.5,$Cols:2,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InOutCubic},$Opacity:2,$Brother:{$Duration:1200,$Opacity:2}},
+                  {$Duration:600,x:0.3,$During:{$Left:[0.6,0.4]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:600,x:-0.3,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}},
+                  {$Duration:800,x:0.25,y:0.5,$Rotate:-0.1,$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Brother:{$Duration:800,x:-0.1,y:-0.7,$Rotate:0.1,$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2}},
+                  {$Duration:1000,x:1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1000,x:-1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+                  {$Duration:1000,y:-1,$Cols:2,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1000,y:1,$Cols:2,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+                  {$Duration:800,y:1,$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:800,y:-1,$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+                  {$Duration:1000,x:-0.1,y:-0.7,$Rotate:0.1,$During:{$Left:[0.6,0.4],$Top:[0.6,0.4],$Rotate:[0.6,0.4]},$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2,$Brother:{$Duration:1000,x:0.2,y:0.5,$Rotate:-0.1,$Easing:{$Left:$Jease$.$InQuad,$Top:$Jease$.$InQuad,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InQuad},$Opacity:2}},
+                  {$Duration:800,x:-0.2,$Delay:40,$Cols:12,$During:{$Left:[0.4,0.6]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:260,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Outside:true,$Round:{$Top:0.5},$Brother:{$Duration:800,x:0.2,$Delay:40,$Cols:12,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:1028,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Round:{$Top:0.5},$Shift:-200}},
+                  {$Duration:700,$Opacity:2,$Brother:{$Duration:700,$Opacity:2}},
+                  {$Duration:800,x:1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:800,x:-1,$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}}
+                ];
+
+                var jssor_1_options = {
+                  $AutoPlay: 1,
+                  $FillMode: 5,
+                  $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                  },
+                  $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                  },
+                  $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$,
+                    $SpacingX: 16,
+                    $SpacingY: 16
+                  }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 600;
+
+                function ScaleSlider() {
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+                    var containerWidth = containerElement.clientWidth;
+
+                    if (containerWidth) {
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+            };
+        </script>
+        <style>
+            /*jssor slider loading skin spin css*/
+            .jssorl-009-spin img {
+                animation-name: jssorl-009-spin;
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes jssorl-009-spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+
+            /*jssor slider bullet skin 072 css*/
+            .jssorb072 .i {position:absolute;color:#000;font-family:"Helvetica neue",Helvetica,Arial,sans-serif;text-align:center;cursor:pointer;z-index:0;}
+            .jssorb072 .i .b {fill:#fff;opacity:.3;}
+            .jssorb072 .i:hover {opacity:.7;}
+            .jssorb072 .iav {color:#fff;}
+            .jssorb072 .iav .b {fill:#000;opacity:.5;}
+            .jssorb072 .i.idn {opacity:.3;}
+
+            /*jssor slider arrow skin 073 css*/
+            .jssora073 {display:block;position:absolute;cursor:pointer;}
+            .jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+            .jssora073:hover {opacity:.8;}
+            .jssora073.jssora073dn {opacity:.4;}
+            .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+        </style>
+        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:500px;overflow:hidden;visibility:hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="//jssors8.azureedge.net/theme/svg/loading/static-svg/spin.svg" />
+            </div>
+            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:500px;overflow:hidden;">
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/960x640/002.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/640x960/001.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/600x240/001.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/200x150/001.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/720x480/005.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/640x960/001.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/980x380/002.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="//jssors8.azureedge.net/demos/img/gallery/200x150/001.jpg" />
+                </div>
+            </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">design web</a>
+            <div data-scale="0" title="Free" style="position:absolute;top:0px;left:0px;min-width:80px;height:24px;background-color:rgba(255,255,140,0.5);font-size:13px;line-height:24px;text-align:center;z-index:1000;">Free
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb072" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:24px;height:24px;font-size:12px;line-height:24px;">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;">
+                        <circle class="b" cx="8000" cy="8000" r="6666.7"></circle>
+                    </svg>
+                    <div data-u="numbertemplate" class="n"></div>
+                </div>
+            </div>
+            <!-- Arrow Navigator -->
+            <div data-u="arrowleft" class="jssora073" style="width:40px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora073" style="width:40px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+                </svg>
+            </div>
+            <div data-interaction="user-commands" class="cmd-box" style="width:70px;height:92px;display:none;" data-scale=".2" data-scale-top=".5" data-scale-right=".5">
+                <div data-command="jssor-editslider" class="cmd-btn cmd-btn-slider" title="edit this slider" style="opacity:.5;pointer-events:none;">Edit 
+                </div>
+                <div data-command="jssor-getslider" class="cmd-btn cmd-btn-slider" title="download this slider">Get 
+                </div>
+                <div data-command="jssor-share" class="cmd-btn cmd-btn-slider" title="share">Share 
+                </div>
+                <div data-command="jssor-loginslider" class="cmd-btn cmd-btn-slider" title="login">Login 
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">jssor_1_slider_init();
+        </script>
+        <!-- #endregion Jssor Slider End -->
+        
+        <script src="//jssors8.azureedge.net/script/site/jssor.user.commands.init-1.30.0.min.js"></script>
+        <script>
+            jssor_user_commands_init({ accessControl: {"fileInfo":{"id":0,"name":"demos/different-size-photo-slider.slider","isReserved":1,"isReadonly":1},"authorInfo":{"userName":"","memberPlan":0},"accessInfo":{"limitedSlides":0,"limitedTransitions":0,"maxUploadFileSize":307200}}, settings: {"resLibCdnUrl":"//jssors8.azureedge.net"} });
+        </script>
+
+    
+    <!-- demo sliders begin -->
+    <div class="ad_title">
+        <div id="ad_title_banner" class="ad_title_banner">
+            <!-- 728x90_second_banner -->
+            <ins id="ad_banner_728_second" class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-5323311666976160"
+                 data-ad-slot="9380985535"></ins>
+
+            <script>
+                new function () {
+                    var availableWidth = document.body.clientWidth || 728;
+                    window.screen && window.screen.availWidth && (availableWidth = Math.max(availableWidth, window.screen.availWidth));
+
+                    if (availableWidth < 728) {
+                        var adTitleBanner = document.getElementById("ad_title_banner");
+                        adTitleBanner && adTitleBanner.parentNode.removeChild(adTitleBanner);
+                    }
+                    else {
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                };
+            </script>
+        </div>
+
+        <div class="ad_title_caption" style="position: absolute; top: 0px; left: 0px; margin-left: 30px; line-height: 90px; font-size: 26px; color: #ff8400; ">
+            <span>Demo - Sliders</span>
+        </div>
+    </div>
+    
+    <div style="margin: 0 auto; width: 100%; max-width: 980px; background-color: #EAEAEA; overflow: hidden;">
+        <div class="thumb_wrapper">
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/full-width-slider.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/demos/full-width/thumb-full-width-slider-300.jpg" alt="fashion slider" /></div>
+                    <div class=thumbc>Full Width Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="https://www.jssor.com/demos/image-slider.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/demos/image-slider/thumb-image-slider-300.jpg" alt="image slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Image Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/ski/ski.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/demos/ski/thumb-ski-slider-300.jpg" alt="ski slider" /></div>
+                    <div class=thumbc>Ski Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/product/product.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/demos/product/thumb-product-slider-300.jpg" alt="product slider" /></div>
+                    <div class=thumbc>Product Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/village-tour/village-tour.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/demos/village-tour/thumb-village-tour-slider-300.jpg" alt="village-tour" /></div>
+                    <div class=thumbc>Village Tour Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/sport/sport.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/demos/sport/thumb-sport-slider-300.jpg" alt="sport slider" /></div>
+                    <div class=thumbc>Sport Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/fashion/fashion.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/fashion/thumb-fashion-slider-300.jpg" alt="fashion slider" /></div>
+                    <div class=thumbc>Fashion Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Ad</div>
+                <div class="ad_rect">
+                    <!-- 300x250_grid_rectangle_up -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-5323311666976160"
+                         data-ad-slot="9752854738"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/music/music.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/music/thumb-music-slider-300.jpg" alt="music slider" /></div>
+                    <div class=thumbc>Music Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/food/food.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/food/thumb-food-slider-300.jpg" alt="food slider" /></div>
+                    <div class=thumbc>Food Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/interior-design/interior-design.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/interior-design/thumb-interior-design-slider-300.jpg" alt="interior design slider" /></div>
+                    <div class=thumbc>Intgerior Design Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/team/team.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/team/thumb-team-slider-300.jpg" alt="team slider" /></div>
+                    <div class=thumbc>Team Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/testimonial/testimonial.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/testimonial/thumb-testimonial-slider-300.jpg" alt="testimonial" /></div>
+                    <div class=thumbc>Testimonial Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/sales/sales.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/sales/thumb-sales-slider-300.jpg" alt="sales slider" /></div>
+                    <div class=thumbc>Sales Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Premium</div>
+                <a class=thumbb href="/premium/digital-marketing/digital-marketing.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/premium/digital-marketing/thumb-digital-marketing-300.jpg" alt="digital marketing slider" /></div>
+                    <div class=thumbc>Digital Marketing Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/image-gallery.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-image-gallery.jpg" alt="image gallery jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Image Gallery</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Ad</div>
+                <div class="ad_rect">
+                    <!-- 300x250_grid_rectangle_below -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-5323311666976160"
+                         data-ad-slot="7803931655"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/image-gallery-with-vertical-thumbnail.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-image-gallery-with-vertical-thumbnail.jpg" alt="image gallery with vertical thumbnail jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Image Gallery with Vertical Thumbnail</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/banner-slider.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-banner-slider.jpg" alt="banner slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Banner Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/carousel-slider.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-carousel-slider.jpg" alt="carousel jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Carousel Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/banner-rotator.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-banner-rotator.jpg" alt="banner rotator jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Banner Rotator</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/scrolling-logo-thumbnail-slider.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-scrolling-logo-thumbnail-slider.jpg" alt="scrolling logo thumbnail slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Scrolling Logo/Thumbnail Slider</div>
+                </a>
+            </div>
+
+
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/different-size-photo-slider.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-different-size-photo-slider.jpg" alt="different size photo slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Different Size Photo Slider</div>
+                </a>
+            </div>
+
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/nearby-image-partial-visible-slider.slider">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-nearby-image-partial-visible-slider.jpg" alt="nearby image partial visible slider jquery javascript+html code example for website design, website development, web design, web development, web designer, web developer, website designer, website developer, website, website builder, web page" /></div>
+                    <div class=thumbc>Nearby Image Partial Visible Slider</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/full-window-for-mobile.slider" target="_blank">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-full-window-for-mobile.jpg" alt="Full Window Slider Mobile Image Slider/Slideshow/Gallery/Banner/Rotator/Scroller" /></div>
+
+                    <div class=thumbc>Full Window Slider (Mobile)</div>
+                </a>
+            </div>
+            <div class=thumb>
+                <div class="side_mark">Free</div>
+                <a class=thumbb href="/demos/full-window-for-pc.slider" target="_blank">
+                    <div class="thumbi"><img src="//jssors8.azureedge.net/image/demo/t-full-window-for-pc.jpg" alt="Full Window Slider PC Image Carousel/Slideshow/Gallery/Banner/Rotator/Scroller" /></div>
+
+                    <div class=thumbc>Full Window Slider (PC)</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- demo sliders end -->
+
+    <div style="height: 10px; clear: both;"></div>
+
+        <!--#endregion-->
+
+        
+
+
+        <!--#region footer-->
+        <div class="footer">
+            <span class="copyright">&nbsp;Jssor Slider 2009-2018</span>
+
+            
+<!--#region share icon footer-->
+<div data-interaction="user-commands" class="cmd-box">
+    <div data-command="jssor-share" class="cmd-btn" title="share"></div>
+    <div data-command="jssor-qrcode" class="cmd-btn" title="QR code"></div>
+</div>
+<!--#region-->
+
+        </div>
+        <!--#endregion-->
+    </form>
+</body>
+</html>

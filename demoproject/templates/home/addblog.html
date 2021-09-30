@@ -1,0 +1,123 @@
+{% comment %} <form  method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+heading<input type="text" name="heading">
+description<input type="text" name="description">
+content<input type="text" name="content">
+image<input type="file" name="image">
+<a href = "{% url  'addblog' %}"><input type="submit"></a>
+</form>
+ {% endcomment %}
+
+{% load static %}
+<head>
+    <title>Myproject</title>
+    <meta name="viewport" content="width=device-width, initial-sc ale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+</head>
+<body>
+    <main>
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                      <a href="{% url 'dashboard' %}"><b>Back</b></a>
+                    {% comment %} <div class="col-md-2">
+                        <div class="logo-in-header">
+                          <a href="{% url "index" %}"> <img src="{% static 'images/logo.png' %}"></a>
+                        
+                        </div>
+    
+                    </div> {% endcomment %}
+
+
+                    <div class="offset-md-5"></div>
+                    <div class="col-md-4">
+                        <div class="list">
+                        
+                            {% comment %} <a href="{% url "login" %}"><i class="fas fa-user"></i> sign in</a> {% endcomment %}
+                            {% comment %} <a href="#"><i class="fas fa-user"></i> sign up</a> {% endcomment %}
+                      
+                       </div>
+                    </div>
+                </div>
+                
+    
+            </div>
+        </div>
+
+
+
+      <section class="section-form">
+        <div class="container box">
+        
+            <div class="jumbotron w-50 box-1" style="border-radius: 50px;background-color:#fff;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <h1 class="pb-4">Add Post</h1>
+                        <form method="POST"  enctype="multipart/form-data">
+                        {% csrf_token %}    
+                        <div class="form-group">
+                        <label for="" class="mb-4">Heading</label><br>
+                         
+                        <input type="text" class="form-control" id="" name="heading">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="" class="mb-4">Description</label>
+                        <input type="text" class="form-control" id="" name="description">
+                        </div>
+ 
+                        <div class="form-group">
+                        <label for="" class="mb-4">Content</label>
+                        <input type="text" class="form-control" id="" name="content">
+                        
+                        </div>
+
+                       
+                        <div class="form-group">
+                        <label for=""  class="mb-4">Image</label> 
+                        <input type="file" id="password" class="form-control" name="image">
+                        </div>
+                        
+                          <div class="button">
+                              <!---<a href="" class="btn btn-primary text-center w-100 colo">Register</a>-->
+                        <a href = "{% url  'addblog' %}"><input type="submit"></a>
+
+                            {% comment %} <input type="submit" value="register"> {% endcomment %}
+                          </div>
+                          <div class="border-footer w-100 pt-4"></div>
+                        
+                        <div class="footer-heading text-center">
+                            <span class="text-primary"> </span>
+                        </div>
+                        </div>
+                        </form>
+
+                        
+                
+               
+
+    
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+          <div class="pd">
+          <div class="row">
+            
+            <div class="col-8">
+              
+          <p>© 2020 the pocket network 2021. All Rights Reserved. Powered By <span>ToXSL Technologies</span></p>
+          </div>
+          <div class="col-4">
+            Privacy Policy Terms&Conditions
+          </div>
+          </div>
+          </div>
+            
+        
+  
+      </div>
+      </footer>

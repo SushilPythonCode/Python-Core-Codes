@@ -1,0 +1,164 @@
+{% load static %}
+<head>
+    <title>MyProject</title>
+        <meta name="viewport" content="width=device-width, initial-sc ale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+</head>
+<body>
+    <main>
+        
+            <div class="container">
+           <nav class="navbar navbar-expand-sm bg-white navbar-white">
+               <!-- Brand -->
+               <a class="navbar-brand" href="{% url  'index' %}"><img src="{% static 'images/logo.png' %}" width="40%";></a>
+       
+   
+             
+               <!-- Links -->
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url  'index' %}">Home</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url  'addblog' %}">Add Blog</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url  'myblog' %}">My Blog</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url 'logout' %}"><b>Logout</b></a>
+                 </li>
+                 </ul>
+                  <ul class="navbar-nav  ml-auto">
+                 <li class="nav-item ml-auto">
+                   <a class="nav-link" href=""><img src="{% static 'images/chat_7 (1).jpg' %}" class="mr-3 rounded-circle bg"></a>
+                    {{user.username}}
+                    
+                    </li>
+              
+               </ul>
+             </nav>
+             </div>
+             <section class="banner-sec">
+              <div class="container h-100">
+               <div class="banner-title text-white">
+                 <h3>Guides</h3>
+                 <p>Check what your friends have been up to!</p>
+              </div>
+        </div>
+    </section>
+                    
+  
+
+      <section class="main-section">
+            <section class="blog-boxes">
+           
+                <div class="container py-5">
+                 <h2>List of all User Blogs</h2>
+                  <!--section-box-1-->
+
+                   {% for x in blog %}
+                  <div class="jumbotron bg-white">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="inner-class">
+                              {% comment %} <img src="{% static 'images/about.png' %}" style="height:230px;width:100%;"> {% endcomment %}
+                                <img src="{{media_url}}{{x.image}}" style="height:230px;width:100%;">
+                              </div>
+                              
+                        </div>
+                        <div class="col-md-8">
+                        
+                    
+                     
+                            <h5>{{x.heading}}</h5>
+                                <p class="blog-color">{{x.author_id	}}</p>
+                               <p> {{x.Content}} </p> 
+                               <ul class="styling-read">
+                                 <li><a href="#">Read Guides</a></li>
+                               </ul>
+                        </div>
+
+                        </div>
+                        </div>
+                                          {% endfor %}
+
+                           
+                    
+
+                        <section class="page">
+                          <div class="container">
+                              <div class="row justify-content-center py-3">
+                                 <div class="pagination">
+                                
+                                        <ul class="pagination px-2">
+                                          <li class="page-item"><a href="#" class="page-link">«</a></li>
+                                          </ul>
+                                          <ul class="pagination  px-2">
+                                             <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                             </ul>
+                                             <ul class="pagination  px-2">
+                                                  <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                  </ul>
+                                                  <ul class="pagination  px-2">
+                                                     <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                                     </ul>
+                                                     <ul class="pagination  px-2">
+                                                          <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                                          </ul>
+                                                          <ul class="pagination  px-2">
+                                                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                            </ul>
+                                                            <ul class="pagination  px-2">
+                     
+                     
+                                                            <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                                            </ul>
+                                                            <ul class="pagination  px-2">
+                                                              <li class="page-item"><a href="#" class="page-link">»</a></li>
+                                                              </ul>
+                                </div>
+          
+                                   </div>
+                                   </div>
+                                   </section>
+                        </section>
+                        </section>
+                      
+                              
+            <footer>
+              <div class="container">
+                <div class="row py-3">
+                  <div class="col-md-8">
+                    © 2020 the pocket network 2021. All Rights Reserved. Powered By <span class="text-primary">ToXSL Technologies </span>
+                  </div>
+                  <div class="col-md-4">
+                    <ul class="list-inline">
+                      <li class="list-inline-item" ><a href="#" class="text-white">
+                        Privacy Policy </a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">
+                          Terms&Conditions</a></li>
+                    </ul>
+            
+
+                  </div>
+                                 </div>
+              </div>
+
+            </footer>              
+   </main>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+  
+                
+                    
+  
+
+
+
+                               

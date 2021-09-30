@@ -1,0 +1,13 @@
+<center>
+<br><br><br><br>
+<a href="login">LOGIN</a><br><br>
+<form method="POST" action='{% url "auth" %}'>
+{% csrf_token %}
+First Name: <input type="text" name="fname"><br><br>
+Last Name: <input type="text" name="lname"><br><br>
+Username: <input type="text" name="username"><br><br>
+Email: <input type="email" name="email"><br><br>
+Password: <input type="text" name="pass"><br><br>
+<input type="submit" value="submit">
+</form>
+</center>

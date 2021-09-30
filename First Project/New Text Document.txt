@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{% block content%}
+<style>
+  
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%  
+}
+/* setting the text-align property to center*/
+ td {
+  padding: 5px;
+  text-align:center;
+        
+}
+</style>
+<center><h1>Working with Django</h1><h2>Welocme to Edit and Update Page</h2></center>
+
+<div class="container">
+  {% comment %} <a class="btn btn-primary" href="register" role="button">Get Register</a> {% endcomment %}
+
+
+<h3>Fetched data from Database</h3>
+
+  <table class="table table-hover table-bordered table table-striped table-dark table-responsive">
+    <thead>
+      <tr>
+        {% comment %} <th style="text-align: center">ID</th> {% endcomment %}
+        <th style="text-align: center">Firstname</th>
+        <th style="text-align: center">Lastname</th>
+        <th style="text-align: center">Email</th>
+        <th style="text-align: center">Username</th>
+        <th style="text-align: center">Password</th>
+        <th style="text-align: center">Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+      <form action="{% url 'first_app:update' detail.id %}" method="POST" >
+{% csrf_token %}
+        {% comment %} <td><input type="text" value="{{detail.id}}"</td> {% endcomment %}
+        <td><input type="text" name="first_name" value="{{detail.first_name  }}"></td>
+        <td><input type="text" value="{{detail.last_name}}"></td>
+        <td><input type="text" value="{{detail.email}}"></td>
+        <td><input type="text" value="{{detail.username}}"></td>
+        <td><input type="text" value="{{detail.password}}"></td>
+        <td><input type="text" value="{{detail.comment}}"></td>
+        
+</td>
+      </tr>
+      <td><a class="btn btn-success" role="button">Update</a></td>
+    </tbody>
+
+  </table>
+  </form>
+
+</div>
+
+{% endblock %}

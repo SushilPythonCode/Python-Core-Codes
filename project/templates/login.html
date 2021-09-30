@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>
+Crud
+</title>
+</head>
+<body>
+<br><br>
+<center>
+<h1>CRUD</h1>
+<h2>Performing Student Login System For School</h2>
+<h3>Login Section</h3>
+<!--starting form for registering-->
+
+<form action="{% url 'crud_application:login' %}" method="POST">
+{% csrf_token %}
+Username:<input type="text" name="username" placeholder="username"><br>
+Password:<input type="text" name="password" placeholder="passworde"><br>
+<input type="submit" value="submit">
+</form>
+
+</center>
+</body>
+</html>

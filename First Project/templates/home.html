@@ -1,0 +1,75 @@
+{%extends 'base.html'%}
+
+{% block content%}
+<style>
+  
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+    
+}
+/* setting the text-align property to center*/
+ td {
+  padding: 5px;
+  text-align:center;
+        
+}
+</style>
+{% comment %} <h1 style="color:red">Hello Sushil</h1>
+<form action="add" method="post">
+{% csrf_token %}
+Enter 1st number : <input type="text" name="num1"><br>
+Enter 2st number : <input type="text" name="num2"><br>
+<input type="submit"><br> {% endcomment %}
+{% comment %} {% for user in users%}
+{{user.name}}
+{{user.email}}
+{% endfor %} {% endcomment %}
+<br><br><br><br>
+<center><h1>Working with Django</h1><h2>Welocme to Home Page</h2></center>
+
+<div class="container">
+  <a class="btn btn-primary" href="register" role="button">Get Register</a>
+
+
+<h3>Fetched data from Database</h3>
+
+  <table class="table table-hover table-bordered table table-striped table-dark table-responsive">
+    <thead>
+      <tr>
+        <th style="text-align: center">ID</th>
+        <th style="text-align: center">Firstname</th>
+        <th style="text-align: center">Lastname</th>
+        <th style="text-align: center">Email</th>
+        <th style="text-align: center">Username</th>
+        <th style="text-align: center">Password</th>
+        <th style="text-align: center">Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for detail in userdetail %}
+
+      <tr>
+        <td>{{detail.id}}</td>
+        <td>{{detail.first_name}}</td>
+        <td>{{detail.last_name}}</td>
+        <td>{{detail.email}}</td>
+        <td>{{detail.username}}</td>
+        <td>{{detail.password}}</td>
+        <td>{{detail.comment}}</td>
+        <td><a class="btn btn-success" href="{% url 'first_app:edit' detail.id %}" role="button">Edit</a></td>
+        <td><a class="btn btn-danger" href="{% url 'first_app:delete' detail.id %}" role="button">Delete</a>
+</td>
+      </tr>
+{% endfor %}
+    </tbody>
+
+  </table>
+  
+
+</div>
+
+
+
+
+{% endblock %}

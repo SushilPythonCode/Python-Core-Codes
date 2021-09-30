@@ -1,0 +1,39 @@
+{% load static %}
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<br><br><br><br>
+<div class="container">
+<table class="table table-striped table-bordered table-hover table-responsive">
+<form method="POST" action="{% url 'first_app:update' detail.id %}">
+{% csrf_token %}
+
+<thead class="thead-dark">
+
+<td>First Name</td>
+<td>Last Name</td>
+<td>Email</td>
+<td>Username</td>
+<td>Password</td>
+<td>Comment</td>
+
+</thead>
+<tr>
+<td><input type="text" value="{{detail.first_name}}" name="first_name"></td>
+<td><input type="text" value="{{detail.last_name}}" name="last_name"></td>
+<td><input type="text" value="{{detail.email}}" name="email"></td>
+<td><input type="text" value="{{detail.username}}" name="username"></td>
+<td><input type="text" value="{{detail.password}}" name="password"></td>
+<td><input type="text" value="{{detail.comment}}" name="comment"></td>
+</tr>
+<tr>
+<td>
+<button type="submit" class="btn btn-primary">Update</button>
+</td>
+</tr>
+
+</form>
+</table>
+</div>

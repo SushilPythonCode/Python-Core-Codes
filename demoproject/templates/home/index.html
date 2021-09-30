@@ -1,0 +1,273 @@
+{% load static %}
+<head>
+    <title>MyProject</title>
+    <meta name="viewport" content="width=devaice-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
+
+   
+</head>
+<body>
+<main>
+{% if user.is_authenticated %}
+   
+            <div class="container">
+           <nav class="navbar navbar-expand-sm bg-white navbar-white">
+               {% comment %} <!-- Brand -->
+               <a class="navbar-brand" href="{% url  'index' %}"><img src="{% static 'images/logo.png' %}" width="40%";></a>
+        {% endcomment %}
+   
+             
+               <!-- Links -->
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url  'dashboard' %}">Dashboard</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url  'addblog' %}">Add Blog</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url  'myblog' %}">My Blog</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="{% url 'logout' %}"><b>Logout</b></a>
+                 </li>
+                 </ul>
+                  <ul class="navbar-nav  ml-auto">
+                 <li class="nav-item ml-auto">
+                   <a class="nav-link" href=""><img src="{% static 'images/chat_7 (1).jpg' %}" class="mr-3 rounded-circle bg"></a>
+                    {{user.username}}
+                    
+                    </li>
+              
+               </ul>
+             </nav>
+             </div>
+{% else %} 
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo-in-header">
+                      <a href="{% url "index" %}"> <img src="{% static 'images/logo.png' %}"></a>
+                    
+                    </div>
+
+                </div>
+                <div class="offset-md-5"></div>
+                <div class="col-md-4">
+                    <div class="list">
+                  
+                 
+                     <a href="{% url "login" %}"><i class="fas fa-user"></i> sign in</a>
+                        <a href="{% url "register" %}"><i class="fas fa-user"></i> sign up</a>
+                 {% endif %}
+                   </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+          
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <div class="heading">
+                    
+            <h1>The Pocket Network</h1>
+            <p>The Pocket Network delivers critical capabilities,
+            helps professionals build their networks, and delivers
+              groundbreaking tools to hone professional success!</p>
+              {% for x in blogs %}
+                    {{ x.heading }}
+                      {% endfor %}
+              </div>
+             </div>
+             <div class="col-lg-6">
+                 
+             <img src="{% static 'images/img-new.png' %}" width="400px">
+             </div>
+
+              </div>
+              </div>
+              </div>
+    </header>
+
+    <section class="box-third">
+           <div class="container ">
+            
+            <h2 class="heading-network">Pocket Network Services</h2>
+            <div class="inner-service">
+               <div class="row align-items-center ">
+                 <div class="col-md-8"> 
+             
+             
+           <h3>  Free Membership</h3>
+<p>At The Pocket Network, we believe in the power of community. 
+Our free membership is ideal for testing the waters or for those who 
+simply want to build their network in the real estate industry without 
+committing to anything. You’ll find that our free membership comes with plenty of benefits, too.</p>
+
+<p>You’re free to post, view, and interact with others within our industry
+ forums. It’s a great way to learn from other real estate agents but also
+  to connect with lenders, escrow and title officers, insurance agents, 
+  and home inspectors. Free members can also follow other members and build their professional network.</p>
+
+<p>We also provide free members with access to our podcasts, enabling you 
+to follow along and learn from industry professionals as they discuss 
+hot topics in the industry, common challenges, and so much more. You 
+can also sign up to join our available webinars, which offer deep dives into critical topics.</p>
+
+<p>In addition to full access to all the tools and capabilities above, 
+you also gain limited access to:</p>
+<ul>
+    <li class="bg-light"><span>Guides:</span>We publish a range of in-depth industry guides each year. 
+    Free members have limited access to download our professional guides.</li>
+    <li class="bg-light"><span>Blogs:</span>We regularly create informative blog posts that offer a lot 
+    of value to our members. Free members have limited access to these
+    resources.</li>
+     <li class="bg-light"><span>Video Library:</span> Our video library includes market analyses, industry
+     updates, and other critical information. Free members have limited
+      access to our library.</li>
+    </ul>
+    <div class="list">
+  
+    <a href="#">JOIN TODAY</a>
+    
+   </div>
+   </div>
+   
+   
+  
+   
+   <div class="col-md-4 align-items-center">
+     <img src="{% static 'images/free.png' %}" width="300px">
+   </div>
+   </div>
+   </div>
+
+  
+      
+        <div class="container mt-5 mb-5">
+           <div class="inner-service">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <img src="{% static 'images/paid.png' %}" alt="img">
+            
+            </div>
+            
+            <div class="col-lg-8">
+            <h3>Paid Membership</h3>
+            For a fee, our paid membership offers all the benefits of the free membership but comes with many exclusive perks only available to paid members.
+            <ul>
+           <li>You get full access to post and view our off-market Pocket Listings (not available on the MLS).</li>
+            <li>Boost your profile or posts to reach more members and dramatically increase your network.</li>
+           <li> Gain full access to our in-depth library for professional development.</li>
+           <li> You have full access to our guides and blog posts.</li>
+          <li> You are free to post job listings to locate new talent for your business.</li>
+          <li>Become a webinar host (with admin approval) and help educate others while building your reputation.</li>
+           <li> Build your team and create private groups to spur business growth and profitability.</li>
+            </ul>
+            <div class="list">
+          
+              <a href="#">JOIN TODAY</a>
+            
+           </div>
+           </div>
+          </div>
+          </div>
+           
+            
+  
+      </section>
+      <section class="why-choose-fluid">
+        <div class="container">
+          <div class="why-choose-content">
+        <div class="row align-items-center">
+          <div class="col-12">
+            
+          <h3> Why Join?</h3>
+<p>Why become part of The Pocket Network? Whether you’re a real estate agent,
+ a mortgage broker, escrow officer, insurance agent, home inspector, or title rep, you will find many benefits.</p>
+
+<p>One of the most important advantages, particularly for real estate agents, 
+is the ability to connect with others outside your brokerage or local area.
+ We empower agents to connect across cities, townships, rural communities, and more.
+  Refer clients seamlessly with connections in multiple cities and states.</p>
+
+<p>Our platform provides other real estate industry professionals with the ability 
+  to provide meaningful value within the wider community and help others achieve success.
+   Of course, mortgage brokers, escrow and title officers, and insurance agents also
+    can boost sales with local members with whom they’ve connected.</p>
+    <div class="list-1 mt-5 mr-3">
+    
+      <a href="#">Free Membership</a>
+          <a href="#">Premium Membership</a>
+        
+</div>
+</div>
+</div>
+  
+      </section>
+      <section class="section-5">
+        <div class="container">
+          <div class="row as">
+            <div class="col-lg-8">
+            <h3> About Us</h3>
+           <p>Choose from free or premium memberships and become part of a fast-growing network 
+               available exclusively to active real estate professionals.
+               The Pocket Network delivers critical capabilities, helps professionals 
+                    build their networks, and delivers groundbreaking tools to hone professional success.</p>
+                     <div class="list-2 ml-0 mt-5">
+                    
+                       <a href="#">Read More</a>
+                      
+                    </div>
+                    </div>
+ 
+             <div class="col-lg-4">
+                <img src="{% static 'images/whyjoin.png' %} " alt="img">
+            </div>
+         </div>
+          </div>
+ 
+  
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-md-8">
+              © 2020 the pocket network 2021. All Rights Reserved. Powered By <span class="text-primary">ToXSL Technologies </span>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline">
+                <li class="list-inline-item" ><a href="#" class="text-white">
+                  Privacy Policy </a></li>
+                  <li class="list-inline-item"><a href="#" class="text-white">
+                    Terms&Conditions</a></li>
+              </ul>
+      
+
+            </div>
+                           </div>
+        </div>
+
+      </footer>          
+
+
+
+
+
+
+
+
+      
+</main>
+</body>
+</html>
